@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS sp.car(
  	id bigserial not null primary key,
 	name varchar(50) not null,
 	price numeric(19,2) not null,
-	person_id uuid references person (id),
+	person_id uuid references sp.person (id),
 	unique(person_id)
 );
 
