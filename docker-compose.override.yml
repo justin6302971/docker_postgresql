@@ -9,7 +9,7 @@ services:
             POSTGRES_USER: ${POSTGRESQL_USER}
             POSTGRES_PASSWORD: ${POSTGRESQL_PASSWORD}
         ports:
-            - '9909:5432'
+            - '9908:5432'
         volumes:
             - localpostgredb-v:/var/lib/postgresql/data
 volumes:
