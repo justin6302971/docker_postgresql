@@ -4,7 +4,7 @@ version: "3.7"
 services:
     postgresqldb:
         container_name: postgredb_${ENVTYPE}
-        image: postgres:12
+        image: postgres:16.6
         networks:
             - localpostgredb-nw
 networks:
